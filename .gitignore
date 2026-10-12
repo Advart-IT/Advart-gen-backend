@@ -1,0 +1,19 @@
+# Secrets and local settings: never committed (copy .env.example to .env; key/auth.py holds the bucket's key)
+.env
+.env.*
+!.env.example
+key/
+
+# Python environment and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local development files
+*.log
+local_storage/
+
+# The automated tests stay on the developer's machine, not in this repository
+tests/
