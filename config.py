@@ -40,7 +40,7 @@ DEV_ACCEPT_ANY_CODE = IS_DEV and os.getenv("DEV_ACCEPT_ANY_CODE", "").strip().lo
 RESET_LINK_MINUTES = 30
 INVITE_LINK_DAYS = 7      # a teammate's "choose your password" link (it is a reset link that lasts longer)
 
-FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3100").rstrip("/")
+FRONTEND_URL = os.getenv("https://gen.advartit.in").rstrip("/")
 
 # ---- Images ----
 STORAGE_BACKEND = os.getenv("STORAGE_BACKEND", "gcs").strip().lower()

@@ -15,7 +15,7 @@ from routers import auth, invoices, moodboard, products, settings, summary, team
 
 logging.basicConfig(level=logging.INFO)
 
-app = FastAPI(title="Advart Gen Portal API")
+app = FastAPI(root_path="/backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[config.FRONTEND_URL],
